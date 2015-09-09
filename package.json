@@ -1,0 +1,17 @@
+{
+  "name": "Udhaar-REST-API",
+  "version": "1.0.0",
+  "description": "REST API for the Udhaar app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vikramgoyal2012/udhaar-REST-API.git"
+  },
+  "author": "vikram goyal",
+  "bugs": {
+    "url": "https://github.com/vikramgoyal2012/udhaar-REST-API/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.3"
+  }
+}
