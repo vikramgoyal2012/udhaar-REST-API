@@ -1,7 +1,7 @@
 var express = require('express'),
-    app = express();
+    app = express(),
+    config = require('./config/config');
 
 
 app.use('/',require('./routes'));
-app.listen('3000');
-
+app.listen(config.PORT);
