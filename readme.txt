@@ -10,4 +10,7 @@ Once the repo is cloned, from the command line run the following command:
 npm install
 This will install the latest versions of all the node modules on your local machine
 
-After starting the server and getting a local copy of the database, the system will be ready to use.
+Start the server using:
+node index.js
+
+Start hitting requests at localhost:3000/ and see the magic happen
