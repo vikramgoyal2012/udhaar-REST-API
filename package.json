@@ -12,6 +12,8 @@
     "url": "https://github.com/vikramgoyal2012/udhaar-REST-API/issues"
   },
   "dependencies": {
-    "express": "~4.13.3"
+    "express": "~4.13.3",
+    "pg": "~4.4.1",
+    "body-parser": "~1.13.3"
   }
 }

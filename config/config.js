@@ -5,6 +5,10 @@
  * Time: 1:01 PM
  * To change this template use File | Settings | File Templates.
  */
-var port = '3000';
 
-exports.PORT = port;
+exports.APPSERVER_PORT = '3000';
+exports.SERVER_USERNAME = 'postgres';
+exports.SERVER_PAASSWORD = 'udhaar';
+exports.HOST = 'localhost';
+exports.DATABASESERVER_PORT = '5432';
+exports.DATABASE = 'Udhaar';

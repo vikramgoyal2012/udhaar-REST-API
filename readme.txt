@@ -13,4 +13,9 @@ This will install the latest versions of all the node modules on your local mach
 Start the server using:
 node index.js
 
-Start hitting requests at localhost:3000/ and see the magic happen
+Now, install PostgreSQL in your local machine
+
+Once you have ensured that the POSTGRESQL server instance is running, you will have to manually create a database
+and the requisite tables. Post that the system should be ready for use.
+
+The functionality of the REST API can be checked using POSTMAN.
