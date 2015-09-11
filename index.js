@@ -6,4 +6,4 @@ var express = require('express'),
 app.use(parser.json()); // support json encoded bodies
 app.use(parser.urlencoded({ extended: true })); // support encoded bodies
 app.use('/',require('./routes'));
-app.listen(process.env.port || config.APPSERVER_PORT);
+app.listen(process.env.PORT || config.APPSERVER_PORT);
