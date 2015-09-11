@@ -15,5 +15,11 @@
     "express": "~4.13.3",
     "pg": "~4.4.1",
     "body-parser": "~1.13.3"
+  },
+  "engines" : {
+      "node" : "v0.10.23"
+  },
+  "scripts" : {
+      "start" : "node index.js"
   }
 }

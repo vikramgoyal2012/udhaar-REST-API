@@ -12,6 +12,7 @@ var express = require('express'),
     staticutil = require('./../lib/staticutil'),
     User = require('./../models/users');
 
+//ToDo : 1)token based authentication 2)storing the sha1 of the password instead of the actual value
 //Get All Users
 router.get('/', function(req,res) {
     var user;
@@ -47,6 +48,7 @@ router.post('/', function (req,res) {
 router.put('/', function (req,res) {
     var userdetails,
         user;
+    console.log(req.body);
     if(!req.body.contactno || !req.body.password || !req.body.name) {
         res.send(staticutil.failureMessage('Insufficient Details For Registration'));
         return;
