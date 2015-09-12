@@ -74,7 +74,7 @@ router.put('/creditlimit', function(req,res) {
 //Transact is called whenever the wallet is used to make a payment somewhere
 router.put('/transact', function (req, res) {
     var contactno = req.body.contactno,
-        moneyrequired = req.body.moneyrequiredt,
+        moneyrequired = req.body.moneyrequired,
         existingbalance,
         creditlimit,
         updatedetails;
