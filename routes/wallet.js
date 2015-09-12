@@ -34,7 +34,7 @@ router.get('/', function (req,res) {
 });
 
 //Recharge - add money to the wallet. Will update the wallet balance.
-/*router.put('/recharge', function(req,res) {
+router.put('/recharge', function(req,res) {
     var contactno = req.body.contactno,
         rechargeamount = req.body.rechargeamount,
         updatedetails;
@@ -50,7 +50,7 @@ router.get('/', function (req,res) {
        }
        res.send(staticutil.successMessage(result));
     });
-});*/
+});
 
 //Update the credit limit
 router.put('/creditlimit', function(req,res) {
