@@ -56,7 +56,7 @@ Wallet.prototype.update = function(updatedetails, contactno, cb) {
         values = [contactno],
         queryObj;
     Object.keys(updatedetails).forEach(function (key) {
-        query += ' ' + key + ' = ' + updatedetails(key) + ',';
+        query += ' ' + key + ' = ' + updatedetails[key] + ',';
     });
     query = query.slice(0,-1);
     query += 'where contactno = $1';
