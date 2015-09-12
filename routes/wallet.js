@@ -87,23 +87,25 @@ router.put('/transact', function (req, res) {
             res.send(staticutil.failureMessage(err));
             return;
         }
-        if(result && result.rows && result.rows[0]) {
-            existingbalance = result.rows[0].balance;
-            creditlimit = result.rows[0].creditlimit;
-            if(moneyrequired > existingbalance + creditlimit) {
-                res.send(staticutil.failureMessage('Insufficient Balance. Credit Limit exceeded'));
+        if(!(result.length > 0)) {
+            res.send(staticutil.failureMessage('Wallet for given contact number not found'));
+            return;
+        }
+        existingbalance = result[0].balance;
+        creditlimit = result[0].creditlimit;
+        if(moneyrequired > existingbalance + creditlimit) {
+            res.send(staticutil.failureMessage('Insufficient Balance. Credit Limit exceeded'));
+            return;
+        }
+        updatedetails = {'balance' : 'balance - ' + moneyrequired};
+        wallet.update(updatedetails,contactno, function (err,result){
+            if(err) {
+                res.send(staticutil.failureMessage(err));
                 return;
             }
-            updatedetails = {'balance' : 'balance - ' + moneyrequired};
-            wallet.update(updatedetails,contactno, function (err,result){
-                if(err) {
-                    res.send(staticutil.failureMessage(err));
-                    return;
-                }
-                res.send(staticutil.successMessage(result));
-            })
-        }
-    })
+            res.send(staticutil.successMessage(result));
+        })
+        })
 
 });
 

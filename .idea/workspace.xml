@@ -78,7 +78,7 @@
     <file path="C:/CMAdservingGit/fcmdynet.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441974185398" ignored="false" />
     <file path="/fcmdynet.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441897498432" ignored="false" />
     <file path="/transactions.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441909512202" ignored="false" />
-    <file path="/wallet.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442061806056" ignored="false" />
+    <file path="/wallet.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442062237961" ignored="false" />
     <file path="$USER_HOME$/node-js-getting-started/package.json" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441957493474" ignored="false" />
     <file path="$USER_HOME$/node-js-getting-started/npm-debug.log" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441956227897" ignored="false" />
     <file path="$USER_HOME$/node-js-getting-started/index.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441960936703" ignored="false" />
@@ -143,7 +143,7 @@
       <file leaf-file-name="wallet.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/wallet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="46" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.78863233">
+            <state line="103" column="8" selection-start="3506" selection-end="3506" vertical-scroll-proportion="0.8152753">
               <folding />
             </state>
           </provider>
@@ -152,7 +152,7 @@
       <file leaf-file-name="wallet.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/wallet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0">
+            <state line="35" column="17" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -611,14 +611,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/wallet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.0">
+        <state line="35" column="17" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/wallet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="46" selection-start="2490" selection-end="2490" vertical-scroll-proportion="0.78863233">
+        <state line="103" column="8" selection-start="3506" selection-end="3506" vertical-scroll-proportion="0.8152753">
           <folding />
         </state>
       </provider>
