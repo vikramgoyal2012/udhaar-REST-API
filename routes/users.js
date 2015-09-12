@@ -10,7 +10,8 @@ var express = require('express'),
     router = express.Router(),
     pg = require('pg'),
     staticutil = require('./../lib/staticutil'),
-    User = require('./../models/users');
+    User = require('./../models/users'),
+    Wallet = require('./../models/wallet');
 
 //ToDo : 1)token based authentication 2)storing the sha1 of the password instead of the actual value
 //Get All Users
@@ -29,7 +30,6 @@ router.get('/', function(req,res) {
 //Get User
 router.post('/', function (req,res) {
         var user;
-        console.log(req.body);
         if(!(req.body.contactno && req.body.password)) {
                 res.send(staticutil.failureMessage('Empty Parameters'));     //Send in object form
                 return;
@@ -47,18 +47,19 @@ router.post('/', function (req,res) {
 //Add User
 router.put('/', function (req,res) {
     var userdetails,
-        user;
+        user,
+        walletdetails;
     console.log(req.body);
-    if(!req.body.contactno || !req.body.password || !req.body.name) {
+    if(!req.body.contactno || !req.body.password || !req.body.name || !req.body.aadhaarno) {
         res.send(staticutil.failureMessage('Insufficient Details For Registration'));
         return;
     }
     userdetails = {
         'contactno' : req.body.contactno,
         'password' : req.body.password,
-        'name' : req.body.name
+        'name' : req.body.name,
+        aadhaarno : req.body.aadhaarno
     };
-    userdetails.aadhaarno = req.body.aadhaarno || null;
     userdetails.email = req.body.email || null;
     user = new User();
     user.create(userdetails, function (err, result) {
@@ -66,7 +67,15 @@ router.put('/', function (req,res) {
             res.send(staticutil.failureMessage(err));
             return;
         }
+        walletdetails = {
+            'contactno' : req.body.contactno,
+            'aadhaarno' : req.body.aadhaarno,
+            'balance' : 0,
+            'creditlimit' : 50
+        };
+        new Wallet().create(walletdetails,function (err,result) {});        //Later on this should be done directly from the POSTGRES or something
         res.send(staticutil.successMessage(result));
+
     });
 });
 
