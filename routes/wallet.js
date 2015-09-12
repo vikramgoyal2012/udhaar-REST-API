@@ -72,27 +72,39 @@ router.put('/creditlimit', function(req,res) {
 });
 
 //Transact is called whenever the wallet is used to make a payment somewhere
-/*router.put('/transact', function (req, res) {
+router.put('/transact', function (req, res) {
     var contactno = req.body.contactno,
         moneyrequired = req.body.moneyrequiredt,
-        balance,
+        existingbalance,
+        creditlimit,
         updatedetails;
-    if(!contactno || !rechargeamount) {
+    if(!contactno || !moneyrequired) {
         res.send(staticutil.failureMessage('Insufficient details'));
         return;
     }
     wallet.fetch(contactno, function(err, result) {
+        if(err) {
+            res.send(staticutil.failureMessage(err));
+            return;
+        }
         if(result && result.rows && result.rows[0]) {
             existingbalance = result.rows[0].balance;
             creditlimit = result.rows[0].creditlimit;
-            if(existingbalance - moneyrequired < creditlimit) {
-                //refuse the transaction
+            if(moneyrequired > existingbalance + creditlimit) {
+                res.send(staticutil.failureMessage('Insufficient Balance. Credit Limit exceeded'));
                 return;
             }
-
+            updatedetails = {'balance' : 'balance - ' + moneyrequired};
+            wallet.update(updatedetails,contactno, function (err,result){
+                if(err) {
+                    res.send(staticutil.failureMessage(err));
+                    return;
+                }
+                res.send(staticutil.successMessage(result));
+            })
         }
     })
 
-});*/
+});
 
 module.exports = router;
