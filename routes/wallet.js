@@ -57,7 +57,7 @@ router.put('/creditlimit', function(req,res) {
     var contactno = req.body.contactno,
         creditlimit = req.body.creditlimit,
         updatedetails;
-        if(!contactno || !rechargeamount) {
+        if(!contactno || !creditlimit) {
             res.send(staticutil.failureMessage('Insufficient Details'));
             return;
         }
