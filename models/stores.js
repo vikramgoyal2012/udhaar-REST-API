@@ -42,7 +42,12 @@ Store.prototype.create = function(storedetails, cb) {
 };
 
 Store.prototype.get = function(storedetails,cb) {
-    var query = "Select * from stores",
+    var query = "Select * from stores where",
+        queryObj;
+    Object.keys(storedetails).forEach(function (key) {
+        query += ' ' + key + ' = ' + storedetails[key] + ',';
+    });
+    query = query.slice(0,-1);
     queryObj = {
         text : query
     };

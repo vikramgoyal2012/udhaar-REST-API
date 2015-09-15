@@ -30,9 +30,10 @@ Store = new store();
 
 //list of nearby stores. Latitude and longitude information to be passed in the query
 router.get('/', function(req,res) {
-    /*
-        Out of city,state,area whichever parameters are there use them for making the select query
-    */
+    if(!(req.body.state || req.body.city || req.body.area)) {
+        res.send(staticutil.failureMessage('Please enter a search filter'));
+        return;
+    }
     Store.get(req.body, function (err, result) {
         if(err) {
             res.send(staticutil.failureMessage(err));
