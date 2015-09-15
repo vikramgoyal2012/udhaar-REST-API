@@ -34,7 +34,7 @@ router.get('/', function(req,res) {
         res.send(staticutil.failureMessage('Please enter a search filter'));
         return;
     }
-    Store.get(req.body, function (err, result) {
+    Store.get(req.query, function (err, result) {
         if(err) {
             res.send(staticutil.failureMessage(err));
             return;

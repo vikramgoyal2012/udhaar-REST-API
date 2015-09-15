@@ -9,7 +9,7 @@
     <file path="/Dummy.txt" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442317081863" ignored="false" />
     <file path="/index.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442055630450" ignored="false" />
     <file path="/readme.txt" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441886703657" ignored="false" />
-    <file path="/stores.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442317467221" ignored="false" />
+    <file path="/stores.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442317594942" ignored="false" />
     <file path="/requestRouter.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441782014274" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/package.json" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441782979179" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/express/node_modules/etag/package.json" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441782979179" ignored="false" />
@@ -88,7 +88,7 @@
     <file path="C:/CMAdservingGit/config/cm-host-config.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442239872810" ignored="false" />
     <file path="/cm-host-config.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442239666258" ignored="false" />
     <file path="/.gitignore" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442316934847" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442317469196" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442317596661" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,10 +108,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="stores.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stores.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/stores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="63" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.37388393">
+            <state line="36" column="12" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,10 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stores.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stores.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/models/stores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="7" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0">
+            <state line="46" column="4" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.5066964">
               <folding />
             </state>
           </provider>
@@ -622,13 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/stores.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="7" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="8" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
@@ -645,7 +638,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/stores.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="63" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.37388393">
+        <state line="36" column="12" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/stores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="4" selection-start="1251" selection-end="1251" vertical-scroll-proportion="0.5066964">
           <folding />
         </state>
       </provider>
