@@ -12,3 +12,13 @@ exports.SERVER_PAASSWORD = 'udhaar';
 exports.HOST = 'localhost';
 exports.DATABASESERVER_PORT = '5432';
 exports.DATABASE = 'Udhaar';
+exports.STORES_CATEGORYMAPPINGS = {
+  1 : 'Karyana',
+  2 : 'Pharmacy',
+  3 : 'Office Canteen',
+  4 : 'College Canteen',
+  5 : 'Mess',
+  6 : 'Restaurant',
+  7 : 'Apparel'
+};
+exports.EARTHRADIUS = 6373;
