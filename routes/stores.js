@@ -30,7 +30,7 @@ Store = new store();
 
 //list of nearby stores. Latitude and longitude information to be passed in the query
 router.get('/', function(req,res) {
-    if(!(req.body.state || req.body.city || req.body.area)) {
+    if(!(req.query.state || req.query.city || req.query.area)) {
         res.send(staticutil.failureMessage('Please enter a search filter'));
         return;
     }
