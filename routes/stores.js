@@ -65,7 +65,9 @@ router.delete('/', function(req,res) {
 
 
 function isValidStoreDetails(storedetails) {
-    return (storedetails.name && storedetails.categoryid && storedetails.ownerid &&
-           storedetails.address && storedetails.state && storedetails.city && storedetails.area);
+    return (staticutil.isStringSet(storedetails.name) && staticutil.isStringSet(storedetails.categoryid) &&
+            staticutil.isStringSet(storedetails.ownerid) && staticutil.isStringSet(storedetails.address) &&
+            staticutil.isStringSet(storedetails.state) && staticutil.isStringSet(storedetails.city) &&
+            staticutil.isStringSet(storedetails.area));
 }
 module.exports = router;

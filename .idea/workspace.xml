@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93aa7f26-f042-4635-8944-1c51987d4158" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/stores.js" afterPath="$PROJECT_DIR$/models/stores.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/staticutil.js" afterPath="$PROJECT_DIR$/lib/staticutil.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/stores.js" afterPath="$PROJECT_DIR$/routes/stores.js" />
     </list>
     <ignored path="Udhaar-REST-API.iws" />
@@ -10,7 +10,7 @@
     <file path="/Dummy.txt" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442294215514" ignored="false" />
     <file path="/index.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442055630450" ignored="false" />
     <file path="/readme.txt" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441886703657" ignored="false" />
-    <file path="/stores.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442305763591" ignored="false" />
+    <file path="/stores.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442306709644" ignored="false" />
     <file path="/requestRouter.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441782014274" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/package.json" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441782979179" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/express/node_modules/etag/package.json" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441782979179" ignored="false" />
@@ -66,7 +66,7 @@
     <file path="C:/CMAdservingGit/service/EntityService.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441974156511" ignored="false" />
     <file path="/EntityService.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441970790978" ignored="false" />
     <file path="/databasehandler.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442055620127" ignored="false" />
-    <file path="/staticutil.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442303890996" ignored="false" />
+    <file path="/staticutil.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442306522103" ignored="false" />
     <file path="C:/CMAdservingGit/__media__/js/util/nrr.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441885610102" ignored="false" />
     <file path="C:/CMAdservingGit/service/AdProviderService.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441885610102" ignored="false" />
     <file path="C:/CMAdservingGit/service/ServiceFactory.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441894623787" ignored="false" />
@@ -119,7 +119,7 @@
       <file leaf-file-name="stores.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/stores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="36" selection-start="337" selection-end="337" vertical-scroll-proportion="0.49514562">
+            <state line="56" column="0" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.787037">
               <folding />
             </state>
           </provider>
@@ -155,7 +155,7 @@
       <file leaf-file-name="wallet.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/wallet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="4" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
+            <state line="76" column="24" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,7 +164,7 @@
       <file leaf-file-name="staticutil.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/staticutil.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="1" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.0">
+            <state line="62" column="9" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -228,9 +228,9 @@
         <option value="$PROJECT_DIR$/models/wallet.js" />
         <option value="$PROJECT_DIR$/routes/wallet.js" />
         <option value="$PROJECT_DIR$/config/config.js" />
+        <option value="$PROJECT_DIR$/models/stores.js" />
         <option value="$PROJECT_DIR$/lib/staticutil.js" />
         <option value="$PROJECT_DIR$/routes/stores.js" />
-        <option value="$PROJECT_DIR$/models/stores.js" />
       </list>
     </option>
   </component>
@@ -461,7 +461,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41830066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41830066" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -599,13 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/staticutil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="1" selection-start="1298" selection-end="1298" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/wallet.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="111" column="24" selection-start="3645" selection-end="3645" vertical-scroll-proportion="0.0">
@@ -627,13 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/wallet.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="4" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/stores.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="23" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0">
@@ -641,9 +627,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/wallet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="24" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/staticutil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="9" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/stores.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="36" selection-start="337" selection-end="337" vertical-scroll-proportion="0.49514562">
+        <state line="56" column="0" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.787037">
           <folding />
         </state>
       </provider>
