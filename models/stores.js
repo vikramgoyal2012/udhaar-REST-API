@@ -58,3 +58,5 @@ Store.prototype.get = function(storedetails,cb) {
 Store.prototype.remove = function(storeID, cb) {
 
 };
+
+module.exports = Store;

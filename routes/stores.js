@@ -10,7 +10,7 @@ var express = require('express'),
     router = express.Router(),
     pg = require('pg'),
     staticutil = require('./../lib/staticutil'),
-    store = require('./../models/transactions'),
+    store = require('./../models/stores'),
     Store;
 
 Store = new store();
