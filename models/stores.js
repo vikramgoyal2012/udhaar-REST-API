@@ -43,13 +43,19 @@ Store.prototype.create = function(storedetails, cb) {
 
 Store.prototype.get = function(storedetails,cb) {
     var query = "Select * from stores where",
+        values = [],
+        i= 1,
         queryObj;
     Object.keys(storedetails).forEach(function (key) {
-        query += ' ' + key + ' = ' + storedetails[key] + ',';
+        query += ' ' + key + ' ~* $' +i+ ' and ';
+        values.push(storedetails[key]);
+        i++;
     });
-    query = query.slice(0,-1);
+    query = query.slice(0,-5);
+    console.log(query);
     queryObj = {
-        text : query
+        text : query,
+        values : values
     };
     db.execute(queryObj, function (err, result) {
         if(!err) {
