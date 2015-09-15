@@ -39,7 +39,7 @@ router.get('/', function(req,res) {
             res.send(staticutil.failureMessage(err));
             return;
         }
-        res.send(staticutil.successMessage(result));
+        res.send(staticutil.successMessage(getNearestStores(result,req)));
     });
 });
 
@@ -71,4 +71,31 @@ function isValidStoreDetails(storedetails) {
             staticutil.isStringSet(storedetails.state) && staticutil.isStringSet(storedetails.city) &&
             staticutil.isStringSet(storedetails.area));
 }
+
+function getNearestStores(stores,req) {
+    var nearestStores = [],
+        count = req.count || 5,
+        userlocation = {},
+        distance;
+    userlocation = {
+        x : req.latitude || 19.125731,
+        y : req.longitude ||72.861259
+    }
+    stores.forEach(function (store) {
+        distance = staticutil.getEquiRectangularProjectionDistance(userlocation,store.location);
+        store.distance = distance;
+    });
+
+    stores.sort(function (a,b) {
+        if(a.distance > b.distance) {
+            return 1;
+        }
+        if(a.value < b.distance) {
+            return -1;
+        }
+        return 0;
+    });
+    return stores;
+}
+
 module.exports = router;

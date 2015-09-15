@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93aa7f26-f042-4635-8944-1c51987d4158" name="Default" comment="a functioning REST API interface for the users table">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/databasehandler.js" afterPath="$PROJECT_DIR$/lib/databasehandler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/stores.js" afterPath="$PROJECT_DIR$/models/stores.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/staticutil.js" afterPath="$PROJECT_DIR$/lib/staticutil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/stores.js" afterPath="$PROJECT_DIR$/routes/stores.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Udhaar-REST-API.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442317081863" ignored="false" />
+    <file path="/Dummy.txt" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442338634502" ignored="false" />
     <file path="/index.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442055630450" ignored="false" />
     <file path="/readme.txt" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441886703657" ignored="false" />
-    <file path="/stores.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442323769391" ignored="false" />
+    <file path="/stores.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442340876662" ignored="false" />
     <file path="/requestRouter.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441782014274" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime-types/node_modules/mime-db/package.json" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441782979179" ignored="false" />
     <file path="$PROJECT_DIR$/node_modules/express/node_modules/etag/package.json" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441782979179" ignored="false" />
@@ -66,7 +67,7 @@
     <file path="C:/CMAdservingGit/service/EntityService.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441974156511" ignored="false" />
     <file path="/EntityService.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441970790978" ignored="false" />
     <file path="/databasehandler.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442319185706" ignored="false" />
-    <file path="/staticutil.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442307225295" ignored="false" />
+    <file path="/staticutil.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442340868867" ignored="false" />
     <file path="C:/CMAdservingGit/__media__/js/util/nrr.js" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441885610102" ignored="false" />
     <file path="C:/CMAdservingGit/service/AdProviderService.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441885610102" ignored="false" />
     <file path="C:/CMAdservingGit/service/ServiceFactory.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1441894623787" ignored="false" />
@@ -89,7 +90,6 @@
     <file path="C:/CMAdservingGit/config/cm-host-config.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442239872810" ignored="false" />
     <file path="/cm-host-config.php" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442239666258" ignored="false" />
     <file path="/.gitignore" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442316934847" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="93aa7f26-f042-4635-8944-1c51987d4158" time="1442324888145" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,10 +109,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="stores.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="stores.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/stores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="10" selection-start="1553" selection-end="1553" vertical-scroll-proportion="0.0">
+            <state line="98" column="1" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.87921846">
               <folding />
             </state>
           </provider>
@@ -127,10 +127,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stores.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="stores.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/stores.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="7" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.5066964">
+            <state line="55" column="3" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,7 +139,7 @@
       <file leaf-file-name="EcmaScript.js" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="810" column="17" selection-start="12541" selection-end="12541" vertical-scroll-proportion="0.0">
+            <state line="447" column="7" selection-start="7212" selection-end="7212" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,7 +148,7 @@
       <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="19" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
+            <state line="23" column="0" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,7 +157,7 @@
       <file leaf-file-name="wallet.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/wallet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="4" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.0">
+            <state line="57" column="4" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,7 +166,7 @@
       <file leaf-file-name="staticutil.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/staticutil.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="29" selection-start="970" selection-end="990" vertical-scroll-proportion="0.0">
+            <state line="51" column="1" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -227,12 +227,12 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/models/wallet.js" />
         <option value="$PROJECT_DIR$/routes/wallet.js" />
-        <option value="$PROJECT_DIR$/lib/staticutil.js" />
         <option value="$PROJECT_DIR$/config/config.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/routes/stores.js" />
         <option value="$PROJECT_DIR$/lib/databasehandler.js" />
         <option value="$PROJECT_DIR$/models/stores.js" />
+        <option value="$PROJECT_DIR$/lib/staticutil.js" />
+        <option value="$PROJECT_DIR$/routes/stores.js" />
       </list>
     </option>
   </component>
@@ -240,8 +240,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -366,14 +366,14 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="136" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="154" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="158" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="158" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../NodeJsGit/AdFetchingService" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="160" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="832" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="840" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="832" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="153" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="147" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -456,24 +456,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21771611" sideWeight="0.5824295" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22121212" sideWeight="0.5852459" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4175705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4147541" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -576,23 +576,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/transactions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/staticutil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="29" selection-start="970" selection-end="990" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -609,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/stores.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="10" selection-start="1553" selection-end="1553" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/databasehandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="29" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0">
@@ -623,9 +600,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/wallet.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="4" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.0">
+        <state line="447" column="7" selection-start="7212" selection-end="7212" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -637,16 +621,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+    <entry file="file://$PROJECT_DIR$/models/wallet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="810" column="17" selection-start="12541" selection-end="12541" vertical-scroll-proportion="0.0">
+        <state line="57" column="4" selection-start="1526" selection-end="1526" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/stores.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="7" selection-start="1447" selection-end="1447" vertical-scroll-proportion="0.5066964">
+        <state line="55" column="3" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/staticutil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="1" selection-start="1016" selection-end="1016" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/stores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="1" selection-start="3376" selection-end="3376" vertical-scroll-proportion="0.87921846">
           <folding />
         </state>
       </provider>
